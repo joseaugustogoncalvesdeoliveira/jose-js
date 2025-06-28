@@ -1,0 +1,112 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #cce7ff;
+  color: #333;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.container {
+  width: 360px;
+}
+
+.card {
+  background: white;
+  padding: 40px 35px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.logo {
+  font-size: 39px;
+  color: #0077cc;
+  margin-bottom: 25px;
+}
+
+form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+form input:focus {
+  border-color: #0077cc;
+  box-shadow: 0 0 5px rgba(0, 119, 204, 0.4);
+  outline: none;
+}
+
+input.invalid {
+  border-color: red;
+}
+
+.senha-group {
+  position: relative;
+}
+
+.toggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #555;
+}
+
+#forcaSenha {
+  height: 8px;
+  border-radius: 5px;
+  background-color: #eee;
+  margin: 6px 0 10px;
+  transition: background-color 0.3s;
+}
+
+.forca-fraca {
+  background-color: #ff4d4d;
+  width: 33%;
+}
+
+.forca-media {
+  background-color: #ffa500;
+  width: 66%;
+}
+
+.forca-forte {
+  background-color: #28a745;
+  width: 100%;
+}
+
+.error {
+  color: #e63946;
+  font-size: 13px;
+  min-height: 20px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background: #0077cc;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  opacity: 0.9;
+}

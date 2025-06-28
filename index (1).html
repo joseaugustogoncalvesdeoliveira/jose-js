@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1 class="logo">Cadastro</h1>
+      <form id="formulario" novalidate>
+        <input type="text" id="nome" placeholder="Nome completo" required />
+        <input type="email" id="email" placeholder="E-mail" required />
+        <input type="text" id="cpf" placeholder="CPF (000.000.000-00)" maxlength="14" required />
+
+        <div class="senha-group">
+          <input type="password" id="senha" placeholder="Senha" required />
+          <button type="button" class="toggle" onclick="mostrarSenha('senha')">👁️</button>
+        </div>
+
+        <div class="senha-group">
+          <input type="password" id="confirmaSenha" placeholder="Confirmar senha" required />
+          <button type="button" class="toggle" onclick="mostrarSenha('confirmaSenha')">👁️</button>
+        </div>
+
+        <div id="forcaSenha"></div>
+        <div id="mensagemErro" class="error"></div>
+        <button type="submit">Cadastrar</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
